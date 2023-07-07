@@ -1,15 +1,18 @@
 import React from 'react';
-import {View,Text} from 'react-native';
-import Frontimg from "../assets/frontimg.svg";
+import {View, Text,SafeAreaView} from 'react-native';
+import SvgComponent from "../assets/frontimgconverted.js";
+import Inputfield from './Inputfield.js'
+function Profile(Props) {
 
- function Profile  (Props){
-
-     return (
-         <View >
-             <Text>This is Profile</Text>
-             <Frontimg/>
-         </View>
-     );
- }
+    return (
+        <SafeAreaView >
+            <Text>This is Profile</Text>
+            <SvgComponent />
+            <View style={{ marginHorizontal:20,}}>
+            < Inputfield />
+            </View>
+        </SafeAreaView>
+    );
+}
 
 export default Profile;

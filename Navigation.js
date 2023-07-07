@@ -1,6 +1,6 @@
 import React from 'react';
 import {Image, Pressable} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
+import {NavigationContainer,DefaultTheme} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import {createDrawerNavigator} from '@react-navigation/drawer';
@@ -134,8 +134,12 @@ function Toptabnavfunc() {
 }
 
 export default function Navigations() {
+    const Mytheme={
+        ...DefaultTheme,
+        colors:{...DefaultTheme.colors,background:"#fff"}
+    };
     return (
-        < NavigationContainer>
+        < NavigationContainer theme={Mytheme}>
             <Drawerfunc />
         </NavigationContainer>
 

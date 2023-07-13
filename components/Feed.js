@@ -5,7 +5,7 @@ export default function Feed() {
 
     return (
         <View>
-            <Text>This is Feed </Text>
+            <Text>This is Feed  </Text>
 
         </View>
 

@@ -6,10 +6,15 @@ function Profile(Props) {
 
     return (
         <SafeAreaView >
-            <Text>This is Profile</Text>
+            <Text>This is Profile </Text>
+            <View style={{height:100,alignItems:"center",justifyContent:"center",marginBottom:100}}>
             <SvgComponent />
+
+             <Text>This is below the input </Text>
+            </View>
             <View style={{ marginHorizontal:20,}}>
             < Inputfield />
+           
             </View>
         </SafeAreaView>
     );
